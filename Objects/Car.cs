@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CarSearch.Object
 {
-  class Car
+  public class Car
   {
     private string _model;
     private int _price;
@@ -46,6 +46,7 @@ namespace CarSearch.Object
     }
   }
 }
+
 
 
 // public class Program
