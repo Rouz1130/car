@@ -8,7 +8,7 @@ namespace CarSearch.Object
     private string _model;
     private int _price;
     private int _miles;
-    private static List<Car> listOfAllOfOurCars = new List<Car> {};
+    private static List<Car> _listOfAllOfOurCars = new List<Car> {};
 
     public Car(string Model, int Price, int Miles)
     {
