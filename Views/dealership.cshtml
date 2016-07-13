@@ -1,18 +1,11 @@
-<h1>This is a dealership</h1>
-<p> The model of your car is here.</p>
-<form action='/page2' method='get'>
-      <div class='form-group'>
-        <label for='field-name'>Your name</label>
-        <input id='field-name' name='field-name' class='form-control' type='text'>
-      </div>
-      <button type='submit' class='btn'>GO!</button>
-    </form>
+<h1>Enter Vehicle</h1>
 
-
-
-
-
-<!--
-<form action="/page2" method="get">
-  <button type="submit">CLICK ME</button>
-</form> -->
+<form action="/Car_entry" method="post">
+  <label for="Model">What is the Model;?</label>
+  <input id="Model" name="Model" type="text">
+  <label for="price">What is the price?</label>
+  <input id="Price" name="Price" type="number">
+  <label for="Miles">How many miles</label>
+  <input id="Miles" name="Miles" type="number">
+  <button type="submit">Submit</button>
+</form>

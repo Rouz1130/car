@@ -10,20 +10,20 @@ namespace CarSearch.Object
     private int _miles;
     private static List<Car> listOfAllOfOurCars = new List<Car> {};
 
-    public Car(string newModel, int newPrice, int newMiles)
+    public Car(string Model, int Price, int Miles)
     {
-      _model = newModel;
-      _price = newPrice;
-      _miles = newMiles;
+      _model = Model;
+      _price = Price;
+      _miles = Miles;
     }
 
     public string GetModel()
     {
       return _model;
     }
-    public void SetModel(string newModel)
+    public void SetModel(string Model)
     {
-      _model = newModel;
+      _model = Model;
     }
 
     public int GetPrice()
@@ -31,9 +31,9 @@ namespace CarSearch.Object
       return _price;
     }
 
-    public void SetPrice(int newPrice)
+    public void SetPrice(int Price)
     {
-      _price = newPrice;
+      _price = Price;
     }
 
     public int GetMiles()
@@ -41,19 +41,19 @@ namespace CarSearch.Object
       return _miles;
     }
 
-    public void SetMiles(int newMiles)
+    public void SetMiles(int Miles)
     {
-      _miles = newMiles;
+      _miles = Miles;
     }
 
     public static List<Car> GetAll()
     {
-      return listOfAllOfOurCars;
+      return _listOfAllOfOurCars;
     }
 
     public void Save()
     {
-      listOfAllOfOurCars.Add(this);
+      _listOfAllOfOurCars.Add(this);
     }
 
   }
