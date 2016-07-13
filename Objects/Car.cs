@@ -8,6 +8,7 @@ namespace CarSearch.Object
     private string _model;
     private int _price;
     private int _miles;
+    private static List<Car> listOfAllOfOurCars = new List<Car> {};
 
     public Car(string newModel, int newPrice, int newMiles)
     {
@@ -44,6 +45,17 @@ namespace CarSearch.Object
     {
       _miles = newMiles;
     }
+
+    public static List<Car> GetAll()
+    {
+      return listOfAllOfOurCars;
+    }
+
+    public void Save()
+    {
+      listOfAllOfOurCars.Add(this);
+    }
+
   }
 }
 
