@@ -13,11 +13,11 @@ namespace CarSearch
       Post["/Car_entry"] = _ => {
         Car newCar = new Car(Request.Form["Model"], Request.Form["Price"],Request.Form["Miles"]);
         newCar.Save();
-        return View["new_car_confirmation.cshtml"];
+        return View["new_car_confirmation.cshtml", newCar];
       };
 
       Get["/stock"] = _ => {
-        List<Car> allCars = Car.GetAll();
+        var allCars = Car.GetAll();
         return View["show_inventory.cshtml", allCars];
       };
     }
